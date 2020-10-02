@@ -1,0 +1,4 @@
+jenkinsfileRunner:
+  image: jenkins4eval/jenkinsfile-runner:maven
+  volumes: 
+    - .:/workspace
