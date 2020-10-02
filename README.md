@@ -1,19 +1,23 @@
-Version Number Library
+CodeShip Demo - Building Java project with Jenkinsfile Runner
 ====
 
-Offers API classes for parsing and comparing version numbers.
+This demo shows how to build a simple Java project on CodeShip,
+with help of Jenkinsfile Runner and a standard [Apache Maven Image pack](https://github.com/oleg-nenashev/jenkinsfile-runner-image-packs/tree/main/maven) offered by the Jenkins project.
 
-Currently it provides a generic `VersionNumber` class 
-and also a `JavaSpecificationVersion` for Java version analysis.
+In this demo, we have a Pipeline trah...
 
-## Javadoc
+* Executes Maven Build
+* Records Unit test results
+* Runs SpotBugs for static analysis and publishes the results
 
-Javadoc is published [here](https://javadoc.jenkins-ci.org/component/version-number/)
+This demo uses [Version Number Library](https://github.com/jenkinsci/lib-version-number) from Jenkins as a target project.
+This library does not include any Jenkins-specific code, and can be considered as a simple library written in Java.
+
+## TODOs
+
+* Record Coverage
+* Publish Build results to build log or to GitHub Actions
 
 ## License
 
 [MIT License](./LICENSE.txt)
-
-## Release notes
-
-See the [changelog](./CHANGELOG.md).

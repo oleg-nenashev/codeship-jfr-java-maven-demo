@@ -1,4 +1,4 @@
-Release Notes
+Release Notes (For Lib Version Number)
 ====
 
 ### 1.7
