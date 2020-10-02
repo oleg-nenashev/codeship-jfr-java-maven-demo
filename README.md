@@ -19,6 +19,7 @@ This library does not include any Jenkins-specific code, and can be considered a
 
 * Record Coverage
 * Publish Build results to build log or to GitHub Actions
+* Nice2Have: Maven artifact caching on CodeShip
 
 ## License
 
