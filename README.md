@@ -6,7 +6,7 @@ CodeShip Demo - Building Java project with Jenkinsfile Runner
 This demo shows how to build a simple Java project on CodeShip,
 with help of Jenkinsfile Runner and a standard [Apache Maven Image pack](https://github.com/oleg-nenashev/jenkinsfile-runner-image-packs/tree/main/maven) offered by the Jenkins project.
 
-In this demo, we have a Pipeline trah...
+In this demo, we have a Pipeline trat...
 
 * Executes Maven Build
 * Records Unit test results
