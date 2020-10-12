@@ -2,4 +2,5 @@ jenkins:
   image: jenkins4eval/jenkinsfile-runner:maven
   volumes: 
     - .:/workspace
+  cached: true
 
