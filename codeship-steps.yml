@@ -1,3 +1,6 @@
 - name: Jenkinsfile
-  service: jenkinsfileRunner
+  service: jenkins
+  command: -h
+- name: Jenkinsfile
+  service: jenkins
   command: -f /workspace
