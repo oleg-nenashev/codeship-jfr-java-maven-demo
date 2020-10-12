@@ -1,6 +1,6 @@
 - name: Prepare
   service: jenkins
-  command: echo hello
+  command: -v
 - name: Jenkinsfile
   service: jenkins
   command: -f /workspace
