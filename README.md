@@ -11,9 +11,12 @@ In this demo, we have a Pipeline trat...
 * Executes Maven Build
 * Records Unit test results
 * Runs SpotBugs for static analysis and publishes the results
+* Uses a `Dockerfile.build` to specify the image, and enables dependency caching.
 
 This demo uses [Version Number Library](https://github.com/jenkinsci/lib-version-number) from Jenkins as a target project.
 This library does not include any Jenkins-specific code, and can be considered as a simple library written in Java.
+
+
   
 ## TODOs
 
