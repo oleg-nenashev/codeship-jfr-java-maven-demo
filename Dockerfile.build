@@ -1,0 +1,13 @@
+FROM jenkins4eval/jenkinsfile-runner:maven
+
+# Copy the pom.xml into the image to install all dependencies so they can be cached by Codeship
+COPY pom.xml ./
+
+# Run install task so all necessary dependencies are downloaded and cached in
+# the Docker image. We're running through the whole process but disable
+# testing and make sure the command doesn't fail.
+RUN mvn install clean --fail-never -B -DfailIfNoTests=false
+
+
+# This gets the source in place for codeship to do its thing from codeship-steps.yml
+COPY . ./

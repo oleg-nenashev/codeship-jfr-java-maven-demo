@@ -1,5 +1,6 @@
 jenkins:
-  image: jenkins4eval/jenkinsfile-runner:maven
+  dockerfile: Dockerfile.build
+  cached: true
   volumes: 
     - .:/workspace
 
