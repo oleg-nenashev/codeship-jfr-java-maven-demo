@@ -1,5 +1,6 @@
 jenkins:
-  dockerfile: Dockerfile.build
+  build:
+    dockerfile: Dockerfile.build
   cached: true
   volumes: 
     - .:/workspace
