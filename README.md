@@ -14,7 +14,7 @@ In this demo, we have a Pipeline trat...
 
 This demo uses [Version Number Library](https://github.com/jenkinsci/lib-version-number) from Jenkins as a target project.
 This library does not include any Jenkins-specific code, and can be considered as a simple library written in Java.
-
+  
 ## TODOs
 
 * Record Coverage
@@ -24,4 +24,5 @@ This library does not include any Jenkins-specific code, and can be considered a
 ## License
 
 [MIT License](./LICENSE.txt)
+
 
