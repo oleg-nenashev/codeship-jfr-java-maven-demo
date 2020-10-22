@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     tools {
         maven "mvn"
         jdk 'jdk8'
@@ -9,10 +9,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
     stages {
-        stage('Linux') {
-            agent {
-                label "linux"
-            }
+        stage('Build') {
             steps {
                 sh 'mvn -V -B -Dmaven.test.failure.ignore=true clean verify'
                 junit '**/target/surefire-reports/TEST-*.xml'
