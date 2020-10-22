@@ -1,5 +1,5 @@
 jenkins:
-  image: jenkins4eval/jenkinsfile-runner:maven
+  image: cloudbees/codeship-jenkinsfile-step:maven-latest
   volumes: 
     - .:/workspace
 
